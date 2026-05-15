@@ -1,0 +1,244 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu May 14 15:44:59 2026
+# Process ID         : 113374
+# Current directory  : /home/pranavv/Desktop/Github_Projects/Dot_Matrix/dot_matrix/dot_matrix.runs/synth_1
+# Command line       : vivado -log MainMethod.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MainMethod.tcl
+# Log file           : /home/pranavv/Desktop/Github_Projects/Dot_Matrix/dot_matrix/dot_matrix.runs/synth_1/MainMethod.vds
+# Journal file       : /home/pranavv/Desktop/Github_Projects/Dot_Matrix/dot_matrix/dot_matrix.runs/synth_1/vivado.jou
+# Running On         : PranavVinothPC
+# Platform           : NobaraLinux
+# Operating System   : Nobara Linux 43 (GNOME Edition)
+# Processor Detail   : AMD Ryzen 7 5800X 8-Core Processor
+# CPU Frequency      : 4778.281 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16697 MB
+# Swap memory        : 26957 MB
+# Total Virtual      : 43654 MB
+# Available Virtual  : 31851 MB
+#-----------------------------------------------------------
+source MainMethod.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/pranavv/Desktop/Github_Projects/Dot_Matrix/dot_matrix/dot_matrix.srcs/utils_1/imports/synth_1/MainMethod.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/pranavv/Desktop/Github_Projects/Dot_Matrix/dot_matrix/dot_matrix.srcs/utils_1/imports/synth_1/MainMethod.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top MainMethod -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 113458
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2456.695 ; gain = 485.156 ; free physical = 2759 ; free virtual = 29123
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'MainMethod' [/home/pranavv/Desktop/Github_Projects/Dot_Matrix/dot_matrix/dot_matrix.srcs/sources_1/new/MainMethod.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MainMethod' (0#1) [/home/pranavv/Desktop/Github_Projects/Dot_Matrix/dot_matrix/dot_matrix.srcs/sources_1/new/MainMethod.v:23]
+WARNING: [Synth 8-3917] design MainMethod has port clk driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2541.664 ; gain = 570.125 ; free physical = 2690 ; free virtual = 29054
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2564.508 ; gain = 592.969 ; free physical = 2674 ; free virtual = 29039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2564.508 ; gain = 592.969 ; free physical = 2674 ; free virtual = 29039
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2564.508 ; gain = 0.000 ; free physical = 2675 ; free virtual = 29039
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/pranavv/Vivado Constraints/mainConstraints.xdc]
+Finished Parsing XDC File [/home/pranavv/Vivado Constraints/mainConstraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/pranavv/Vivado Constraints/mainConstraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MainMethod_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MainMethod_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2649.246 ; gain = 0.000 ; free physical = 2573 ; free virtual = 28941
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2649.281 ; gain = 0.000 ; free physical = 2572 ; free virtual = 28940
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2649.281 ; gain = 677.742 ; free physical = 2527 ; free virtual = 28896
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2657.250 ; gain = 685.711 ; free physical = 2527 ; free virtual = 28896
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2657.250 ; gain = 685.711 ; free physical = 2527 ; free virtual = 28896
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2657.250 ; gain = 685.711 ; free physical = 2536 ; free virtual = 28906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   25 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design MainMethod has port clk driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2657.250 ; gain = 685.711 ; free physical = 2509 ; free virtual = 28883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2730.250 ; gain = 758.711 ; free physical = 2426 ; free virtual = 28800
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2739.266 ; gain = 767.727 ; free physical = 2419 ; free virtual = 28794
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2759.297 ; gain = 787.758 ; free physical = 2413 ; free virtual = 28782
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2926.109 ; gain = 954.570 ; free physical = 2284 ; free virtual = 28649
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2926.109 ; gain = 954.570 ; free physical = 2292 ; free virtual = 28657
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2926.109 ; gain = 954.570 ; free physical = 2292 ; free virtual = 28656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2926.109 ; gain = 954.570 ; free physical = 2292 ; free virtual = 28656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2926.109 ; gain = 954.570 ; free physical = 2292 ; free virtual = 28656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2926.109 ; gain = 954.570 ; free physical = 2292 ; free virtual = 28656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     6|
+|3     |LUT1   |     2|
+|4     |LUT2   |     1|
+|5     |LUT3   |     2|
+|6     |LUT4   |     6|
+|7     |LUT6   |     4|
+|8     |FDRE   |    28|
+|9     |FDSE   |     5|
+|10    |IBUF   |     1|
+|11    |OBUF   |     3|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2926.109 ; gain = 954.570 ; free physical = 2292 ; free virtual = 28656
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2926.109 ; gain = 869.797 ; free physical = 2289 ; free virtual = 28653
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2926.117 ; gain = 954.570 ; free physical = 2289 ; free virtual = 28653
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2926.117 ; gain = 0.000 ; free physical = 2288 ; free virtual = 28652
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2982.137 ; gain = 0.000 ; free physical = 2464 ; free virtual = 28829
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 411fd2e1
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 2982.172 ; gain = 1150.523 ; free physical = 2464 ; free virtual = 28829
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1847.252; main = 1847.252; forked = 274.763
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4303.027; main = 2982.141; forked = 1645.773
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3006.148 ; gain = 0.000 ; free physical = 2464 ; free virtual = 28828
+INFO: [Common 17-1381] The checkpoint '/home/pranavv/Desktop/Github_Projects/Dot_Matrix/dot_matrix/dot_matrix.runs/synth_1/MainMethod.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file MainMethod_utilization_synth.rpt -pb MainMethod_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 14 15:45:21 2026...
